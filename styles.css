@@ -99,7 +99,10 @@ hr.q-divider{
   line-height: 1.5;
 }
 
-
+.reverse {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
 /* ---------------------- */
 /* blow-up styles formatting*/
 /* ---------------------- */
@@ -113,6 +116,7 @@ hr.q-divider{
   transition: all .1s;
 }
 
+
 /* ---------------------- */
 /* reverse-squares formatting*/
 /* ---------------------- */
@@ -120,6 +124,13 @@ hr.q-divider{
 #reverse-squares .answer-box{
   text-align: center;
   font-size: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#reverse-squares .answer-box.invert{
+  flex-direction: row-reverse;
+
 }
 
 #reverse-squares .answer-box span.square{
@@ -154,6 +165,10 @@ hr.q-divider{
   height: 100px;
   border: 2px solid;
   vertical-align: bottom;
+}
+
+.exercise-container #circle-bw.black{
+  background: rgb(0,0,0);
 }
 
 
